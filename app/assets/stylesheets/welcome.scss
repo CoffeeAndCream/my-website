@@ -1,0 +1,45 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//bars//
+.teal-bar {
+  background-color: #a3c2c2;
+  display: block;
+  width: 100%;
+}
+.green-bar {
+  background-color: #8cd98c;
+  display: block;
+  width: 100%;
+}
+.dark-green-bar {
+  background-color: #001a00;
+  display: block;
+  width: 100%;
+}
+.gray-bar {
+  background-color: #999999;
+  display: block;
+  width: 100%;
+}
+//end bars//
+//fonts//
+h1,h2,h3 {
+  color: #d9d9d9 !important;
+}
+//end fonts//
+//padding//
+.padding-bottom-20 {
+  padding-bottom:20px;
+}
+//end padding//
+//animation//
+.webkit-slow-13 {
+  -webkit-animation-delay: 13s; /* Safari 4.0 - 8.0 */
+    animation-delay: 13s;
+}
+.webkit-slow-15 {
+  -webkit-animation-delay: 15s; /* Safari 4.0 - 8.0 */
+    animation-delay: 15s;
+}
+//end animation//
