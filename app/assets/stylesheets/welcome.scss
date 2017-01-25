@@ -23,9 +23,26 @@
   width: 100%;
 }
 //end bars//
+//big containers//
+.main-container{
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+//end containers//
 //fonts//
 h1,h2,h3 {
-  color: #d9d9d9 !important;
+  color: #bfbfbf !important;
+}
+.red-font {
+  color: #ff0000;
+}
+.blue-font {
+  color: #0000ff;
+}
+.lightblue-font{
+  color: #809fff;
 }
 //end fonts//
 //padding//
@@ -34,6 +51,15 @@ h1,h2,h3 {
 }
 //end padding//
 //animation//
+//slows//
+.webkit-slow-10 {
+  -webkit-animation-delay: 9.5s; /* Safari 4.0 - 8.0 */
+    animation-delay: 9.5s;
+}
+.webkit-slow-11 {
+  -webkit-animation-delay: 11s; /* Safari 4.0 - 8.0 */
+    animation-delay: 11s;
+}
 .webkit-slow-13 {
   -webkit-animation-delay: 13s; /* Safari 4.0 - 8.0 */
     animation-delay: 13s;
@@ -42,4 +68,12 @@ h1,h2,h3 {
   -webkit-animation-delay: 15s; /* Safari 4.0 - 8.0 */
     animation-delay: 15s;
 }
+//end slows//
 //end animation//
+//javascript spans//
+#hide {
+  display: none;
+}
+#hideafter {
+}
+//end javascript spans//

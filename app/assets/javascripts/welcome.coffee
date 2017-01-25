@@ -22,7 +22,7 @@ TxtType::tick = ->
     @txt = fullTxt.substring(0, @txt.length + 1)
   @el.innerHTML = '<h3 id="#wrap">' + @txt + '</h3>'
   that = this
-  delta = 200 - (Math.random() * 100)
+  delta = 150 - (Math.random() * 100)
   if @isDeleting
     delta /= 2
   if !@isDeleting and @txt == fullTxt
@@ -55,4 +55,16 @@ window.onload = ->
   return
 
 #END TYPEWRITER 1#
+#MAIN-CONTAINER TIMER#
+setTimeout (->
+  $('#hide').fadeIn()
+  return
+), 12000
+#END MAIN-CONTAINER TIMER#
+#TYPEWRITE HIDE#
+setTimeout (->
+  $('#hideafter').hide()
+  return
+), 12000
+#END TYPEWRITE HIDE#
 #end animations#
