@@ -12,8 +12,6 @@
         <h2>Hello world. Welcome to my brain.</h2>
       </div>
     </div>
-    <!--TODO ADD 'uncomment at end'
-
     <div class="row">
       <div class="col-md-6 animated hinge webkit-slow-10">
         <div id="hideafter" class="typewrite" data-period="2000" data-type='[ "Sometimes my sites break.", "But that rarely happens..."]'>
@@ -21,43 +19,44 @@
         </div>
       </div>
     </div>
-  -->
-    <!--TODO ADD 'animated slideInUp' to class list and 'hide' to id -->
-    <div id="" class="row">
+  </div>
+  <div id="hide" class="container animated slideInUp">
+    <div class="row">
       <div class="col-lg-6 main-container">
+        <!-- TODO UNCOMMENT THIS LINE and fix this ugly thing
           <div id="info-icon">
-            <h1><span class="animated tada webkit-slow-2 lightred-font glyphicon glyphicon-info-sign" style="display:inline-block"></span> In here, we go by Sean.</h1>
-            <div id="text-drop" class="padding-left-50">
-              <h6>Click the class buttons for the .cpp</h6>
+            <h3><span class="animated tada lightred-font glyphicon glyphicon-info-sign" style="display:inline-block"></span><span class="lightred-font"> In here, we go by Sean.</span></h3>
+            <div id="text-drop">
+              <p>Click the class buttons for the .cpp</p>
             </div>
           </div>
-          <hr>
-          <h3>struct Identity {</h3>
+        -->
+          <h3>struct <span class="darkblue-font">Identity</span> {</h3>
           <h3 style="font-size:18px;">std::string first_name = "Sean";</h3>
           <h3 style="font-size:18px;">std::string last_name = "Hulse";</h3>
           <h3>};</h3>
-          <h1>class <span class="lightred-font">ComputerScientist</span> {</h1>
-          <h3 class="lightred-font" style="font-size:22px;"><span class="lightred-font">public:</span></h3>
+          <h1>class <span class="darkblue-font">ComputerScientist</span> {</h1>
+          <h3 class="lightred-font" style="font-size:22px;"><span class="darkblue-font">public:</span></h3>
           <div class="padding-left-20">
             <div class="padding-bottom-5">
-              <button id="default-constructor-button" class="btn btn-info btn-xs"><h4 class="white-font">ComputerScientist (); </h4></button>
+              <button id="default-constructor-button" class="btn btn-primary btn-xs"><h4 class="white-font">ComputerScientist (); </h4></button>
               <div id="default-constructor" class="animated pull-tab-container">
                 <p>We all know the "default" human constructor. If you don't know... birds and bees are involved.</p>
               </div>
             </div>
             <div class="padding-bottom-5">
-              <button id="constructor-button" class="btn btn-info btn-xs"><h4 class="white-font">ComputerScientist (int, std::string, std::string, std::string); </h4></button>
+              <button id="constructor-button" class="btn btn-primary btn-xs"><h4 class="white-font">ComputerScientist (int, std::string, std::string, std::string); </h4></button>
               <div id="constructor" class="animated pull-tab-container">
                 <p>ComputerScientist::ComputerScientist (int years, std::string primary_language, std::string first_name, std::string last_name) {</p>
-                  <p class="margin-left-40"> Name.first_name = first_name;</p>
-                  <p class="margin-left-40"> Name.last_name = last_name;</p>
+                  <p class="margin-left-40"> name_.first_name = first_name;</p>
+                  <p class="margin-left-40"> name_.last_name = last_name;</p>
                   <p class="margin-left-40"> experience_.push_back({years, primary_langauge})</p>
                 <p>}</p>
                 <p>//ComputerScientist(3, "C++", "Sean", "Hulse");</p>
               </div>
             </div>
             <div class="padding-bottom-5">
-              <button id="destructor-button" class="btn btn-info btn-xs"><h4 class="white-font">~ComputerScientist (); </h4></button>
+              <button id="destructor-button" class="btn btn-primary btn-xs"><h4 class="white-font">~ComputerScientist (); </h4></button>
               <div id="destructor" class="animated pull-tab-container">
                 <p>//Why would you do this to me?</p>
                 <p>ComputerScientist::~ComputerScientist () {</p>
@@ -68,8 +67,8 @@
               </div>
             </div>
             <div class="padding-bottom-5">
-              <button id="education-button" class="btn btn-info btn-xs"><h4 class="white-font">void printEducation (); </h4></button>
-              <div id="education" class="animated pull-tab-container">
+              <button id="education-button" class="btn btn-primary btn-xs"><h4 class="white-font">void printEducation (); </h4></button>
+              <div id="education" class="animated pull-tab-container " style="margin-top:-400px">
                 <p>void ComputerScientist::printEducation () {</p>
                   <p class="margin-left-40">std::cout << "Bachelor of Arts: English Literature (2014)\n";</p>
                   <p class="margin-left-40">std::cout << "C++:\n";</p>
@@ -90,23 +89,63 @@
               </div>
             </div>
             <div class="padding-bottom-5">
-              <button id="job-button" class="btn btn-info btn-xs"><h4 class="white-font">print jobHistory (); </h4></button>
+              <button id="job-button" class="btn btn-primary btn-xs"><h4 class="white-font">print jobHistory (); </h4></button>
               <div id="job" class="animated pull-tab-container">
                 <p>void ComputerScientist::printJobHistory () {</p>
-                  <p class="margin-left-40">std::cout << "IT Technician - Transform Partners - 2015-2016\n";
-                  <p class="margin-left-40">std::cout << "Web Developer - Legacy Exteriors - 2017\n";
+                  <p class="margin-left-40">std::cout << "Web Developer (PHP) - Legacy Exteriors - 2017\n";
+                  <p class="margin-left-40">std::cout << "IT Technician (Linux) - Transform Partners - 2015-2016\n";
                   <p class="margin-left-40">std::cout << "SEO / Marketing - StoneImpressions - 2015\n";
                 <p>}</p>
               </div>
             </div>
-          <h3 style="font-size:22px;"><span class="lightred-font">private:</span></h3>
+          </div>
+          <h3 style="font-size:22px;"><span class="darkblue-font">private:</span></h3>
           <div class="padding-left-20">
             <h3 style="font-size:18px;">Identity name_;</h3>
             <h3 style="font-size:18px;">std::vector&lt;std::pair&lt;int, std::string>> experience_;</h3>
           </div>
-          <h1>};</h1>
-      </div>
+      <h1>};</h1>
     </div>
   </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-6 main-container">
+      <h1 style="text-align:center">Got tired of reading code?</h1>
+      <a id="resume-button"><h3><span class="lightred-font glyphicon glyphicon-info-sign" style="display:inline-block"></span>
+        <span class="lightred-font"> Click here for a cleaner output.</span></h3>
+      </a>
+        <div id="resume" class="animated pull-tab-container" style="margin-top:-850px; padding-left: 20px;margin-left:600px;">
+          <p style="text-align:center;">Sean Hulse</p>
+          <p style="text-align:center;">(858) 342-6382</p>
+          <p style="text-align:center;">seanjhulse@gmail.com</p>
+          <p style="text-align:center;">Madison, Wisconsin</p>
+          <hr>
+          <p><b>Employment</b></p>
+          <p class="margin-left-40">Title: Web Developer</p>
+          <p class="margin-left-40">Company: Legacy Exteriors</p>
+          <p class="margin-left-40">Dates: 2016-Present</p>
+          <hr>
+          <p class="margin-left-40">Title: IT Technician</p>
+          <p class="margin-left-40">Company: Transform Partners</p>
+          <p class="margin-left-40">Dates: 2015-2016</p>
+          <hr>
+          <p class="margin-left-40">Title: Marketing Temp</p>
+          <p class="margin-left-40">Company: StoneImpressions</p>
+          <p class="margin-left-40">Dates: 2014-2015</p>
+          <hr>
+          <p><b>Education</b></p>
+          <p class="margin-left-40">English Literature</p>
+          <p class="margin-left-80">Bachelor of Arts</p>
+          <p class="margin-left-80">University of Redlands</p>
+          <hr>
+          <p><b>Post-Graduate Studies</b></p>
+          <p class="margin-left-40">C.S.</p>
+          <p class="margin-left-80">C++, Java, SQL, Linux</p>
+          <p class="margin-left-40">Mathematics</p>
+          <p class="margin-left-80">Calc I, II, III &amp; Discrete Computational</p>
+        </div>
+    </div>
+  </div>
+</div>
   </body>
 </html>

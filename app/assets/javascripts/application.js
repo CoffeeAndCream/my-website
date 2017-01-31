@@ -19,10 +19,10 @@ $(document).ready(function () {
   $("#default-constructor-button").click(function() {
     var element = $('#default-constructor');
     if(element.hasClass("showed")){
-          element.removeClass("showed").removeClass("fadeInLeft").addClass("fadeOutLeft").fadeOut();
+          element.removeClass("showed").removeClass("slideInLeft").addClass("slideOutLeft").show();
     }
     else{
-      element.addClass("showed").removeClass("fadeOutLeft").addClass("fadeInLeft").fadeIn();
+      element.addClass("showed").removeClass("slideOutLeft").addClass("slideInLeft").show();
     }
   });
 });
@@ -30,10 +30,10 @@ $(document).ready(function () {
   $("#constructor-button").click(function() {
     var element = $('#constructor');
     if(element.hasClass("showed")){
-          element.removeClass("showed").removeClass("fadeInLeft").addClass("fadeOutLeft").fadeOut();
+          element.removeClass("showed").removeClass("slideInLeft").addClass("slideOutLeft").show();
     }
     else{
-      element.addClass("showed").removeClass("fadeOutLeft").addClass("fadeInLeft").fadeIn();
+      element.addClass("showed").removeClass("slideOutLeft").addClass("slideInLeft").show();
     }
   });
 });
@@ -41,10 +41,10 @@ $(document).ready(function () {
   $("#destructor-button").click(function() {
     var element = $('#destructor');
     if(element.hasClass("showed")){
-          element.removeClass("showed").removeClass("fadeInLeft").addClass("fadeOutLeft").fadeOut();
+          element.removeClass("showed").removeClass("slideInLeft").addClass("slideOutLeft").show();
     }
     else{
-      element.addClass("showed").removeClass("fadeOutLeft").addClass("fadeInLeft").fadeIn();
+      element.addClass("showed").removeClass("slideOutLeft").addClass("slideInLeft").show();
     }
   });
 });
@@ -52,10 +52,10 @@ $(document).ready(function () {
   $("#education-button").click(function() {
     var element = $('#education');
     if(element.hasClass("showed")){
-          element.removeClass("showed").removeClass("fadeInLeft").addClass("fadeOutLeft").fadeOut();
+          element.removeClass("showed").removeClass("slideInLeft").addClass("slideOutLeft").show();
     }
     else{
-      element.addClass("showed").removeClass("fadeOutLeft").addClass("fadeInLeft").fadeIn();
+      element.addClass("showed").removeClass("slideOutLeft").addClass("slideInLeft").show();
     }
   });
 });
@@ -63,10 +63,21 @@ $(document).ready(function () {
   $("#job-button").click(function() {
     var element = $('#job');
     if(element.hasClass("showed")){
-          element.removeClass("showed").removeClass("fadeInLeft").addClass("fadeOutLeft").fadeOut();
+          element.removeClass("showed").removeClass("slideInLeft").addClass("slideOutLeft").show();
     }
     else{
-      element.addClass("showed").removeClass("fadeOutLeft").addClass("fadeInLeft").fadeIn();
+      element.addClass("showed").removeClass("slideOutLeft").addClass("slideInLeft").show();
+    }
+  });
+});
+$(document).ready(function () {
+  $("#resume-button").click(function() {
+    var element = $('#resume');
+    if(element.hasClass("showed")){
+          element.removeClass("showed").removeClass("slideInLeft").addClass("slideOutLeft").fadeOut();
+    }
+    else{
+      element.addClass("showed").removeClass("slideOutLeft").addClass("slideInLeft").fadeIn();
     }
   });
 });
