@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
   <div class="container">
@@ -11,6 +12,8 @@
         <h2>Hello world. Welcome to my brain.</h2>
       </div>
     </div>
+    <!--TODO ADD 'uncomment at end'
+
     <div class="row">
       <div class="col-md-6 animated hinge webkit-slow-10">
         <div id="hideafter" class="typewrite" data-period="2000" data-type='[ "Sometimes my sites break.", "But that rarely happens..."]'>
@@ -18,11 +21,47 @@
         </div>
       </div>
     </div>
-    <div id="hide" class="row animated slideInUp">
-      <div class="col-lg-12 main-container">
-        <hr>
-          <h1><span class="lightblue-font glyphicon glyphicon-info-sign"></span> In here, we go by Sean.</h1>
-          <h4>You could have landed here in a million different ways. But the important thing is: you're here.</h4>
+  -->
+    <!--TODO ADD 'animated slideInUp' to class list and 'hide' to id -->
+    <div id="" class="row">
+      <div class="col-lg-6 main-container">
+          <div id="info-icon">
+            <h1><span class="animated bounce webkit-slow-2 lightred-font glyphicon glyphicon-info-sign" style="display:inline-block"></span> In here, we go by Sean.</h1>
+            <div id="text-drop" class="padding-left-50">
+              <h6>You could have landed here in a million different ways. But the important thing is: you're here.</h6>
+            </div>
+          </div>
+          <hr>
+          <h3>struct Sean {</h3>
+          <h3 style="font-size:18px;">std::string first_name = "Sean";</h3>
+          <h3 style="font-size:18px;">std::string last_name = "Hulse";</h3>
+          <h3>};</h3>
+          <h1>class <span class="lightred-font">ComputerScientist</span> {</h1>
+          <h3 class="lightred-font" style="font-size:22px;"><span class="lightred-font">public:</span></h3>
+          <div class="padding-left-20">
+            <button onclick="codeDrop()" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-plus">
+            </span><h2 style="display:inline;font-size:18px;"> ComputerScientist();</button> <span style="color:dimgray;">//default constructor</span></h3>
+              <!--TODO ADD 'animated slideUp on click-->
+            <div id="default-constructor" class="animated slideInUp">
+              hello world.
+            </div>
+            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> ComputerScientist(int, std::string);</h3>
+            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> ~ComputerScientist();</h3>
+            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> void printEducation();</h3>
+            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> void printPersonalHistory();</h3>
+            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> int getAge();</h3>
+            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> void pushExperienceFront(std::string, int);</h3>
+            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> int length();</h3>
+            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;" style="font-size:18px;">add_box</i> std::string getExperienceName();</h3>
+          </div>
+          <h3 style="font-size:22px;"><span class="lightred-font">private:</span></h3>
+          <div class="padding-left-20">
+            <h3 style="font-size:18px;">std::string name_;</h3>
+            <h3 style="font-size:18px;">int age_ = 0;</h3>
+            <h3 style="font-size:18px;">int count_ = 0;</h3>
+            <h3 style="font-size:18px;">std::hash< std::string> experience_vec_;<span style="color:dimgray;"></span></h3>
+          </div>
+          <h1>}</h1>
       </div>
     </div>
   </div>

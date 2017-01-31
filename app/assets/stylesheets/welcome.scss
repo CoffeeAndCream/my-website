@@ -24,19 +24,51 @@
 }
 //end bars//
 //big containers//
+body {
+  background-color: #0099ff !important;
+  margin: 0 auto;
+}
 .main-container{
   background-color: #ffffff;
   display: block;
-  width: 100%;
-  height: 100%;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.25);
 }
 //end containers//
 //fonts//
-h1,h2,h3 {
-  color: #bfbfbf !important;
+h1 {
+  color: #0099ff !important;
+  font-weight: bolder !important;
+}
+h2 {
+  color: #ffffff !important;
+}
+h3 {
+  color: #0099ff !important;
+  font-weight: bolder !important;
+}
+h4 {
+  color: #000000 !important;
+}
+p {
+  padding-left: 40px !important;
+}
+.black-font {
+  color: #000000;
 }
 .red-font {
   color: #ff0000;
+}
+.lightred-font{
+  color: #ff4d4d
+}
+.orange-font {
+  color: #ff6600;
+}
+.lightgreen-font{
+  color: #00cc66;
+}
+.darkgreen-font {
+  color: #336600 !important;
 }
 .blue-font {
   color: #0000ff;
@@ -44,14 +76,64 @@ h1,h2,h3 {
 .lightblue-font{
   color: #809fff;
 }
+hr {
+    background-color: dimgray !important;
+    color: dimgray !important;
+    border: solid 0px dimgray !important;
+    height: 1px !important;
+    width: 95% !important;
+}
+button {
+
+}
 //end fonts//
 //padding//
 .padding-bottom-20 {
   padding-bottom:20px;
 }
+.padding-right-20 {
+  padding-right: 20px;
+}
+.padding-left-20 {
+  padding-left: 20px;
+}
+.padding-left-50 {
+  padding-left: 50px;
+}
 //end padding//
+//shadow//
+.shadow-small {
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.25);
+}
 //animation//
+//misc//
+.slide-arrow{
+
+}
+//end misc//
+//hovers//
+#text-drop {
+  visibility: hidden;
+  opacity: 0;
+}
+#info-icon:hover #text-drop {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+}
+#default-constructor {
+}
+//infinite
+.webkit-infinite {
+  -webkit-animation:infinite; /* Safari 4.0 - 8.0 */
+    animation:infinite;
+}
+//end infinite//
 //slows//
+.webkit-slow-2 {
+  -webkit-animation-delay:2s; /* Safari 4.0 - 8.0 */
+    animation-delay:2s;
+}
 .webkit-slow-10 {
   -webkit-animation-delay: 9.5s; /* Safari 4.0 - 8.0 */
     animation-delay: 9.5s;

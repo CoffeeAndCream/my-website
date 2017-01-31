@@ -20,7 +20,7 @@ TxtType::tick = ->
     @txt = fullTxt.substring(0, @txt.length - 1)
   else
     @txt = fullTxt.substring(0, @txt.length + 1)
-  @el.innerHTML = '<h3 id="#wrap">' + @txt + '</h3>'
+  @el.innerHTML = '<h2 id="#wrap">' + @txt + '</h2>'
   that = this
   delta = 150 - (Math.random() * 100)
   if @isDeleting
@@ -67,4 +67,6 @@ setTimeout (->
   return
 ), 12000
 #END TYPEWRITE HIDE#
+#code-drop
+#end code drop
 #end animations#
