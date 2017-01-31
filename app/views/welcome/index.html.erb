@@ -26,40 +26,83 @@
     <div id="" class="row">
       <div class="col-lg-6 main-container">
           <div id="info-icon">
-            <h1><span class="animated bounce webkit-slow-2 lightred-font glyphicon glyphicon-info-sign" style="display:inline-block"></span> In here, we go by Sean.</h1>
+            <h1><span class="animated tada webkit-slow-2 lightred-font glyphicon glyphicon-info-sign" style="display:inline-block"></span> In here, we go by Sean.</h1>
             <div id="text-drop" class="padding-left-50">
-              <h6>You could have landed here in a million different ways. But the important thing is: you're here.</h6>
+              <h6>Click the class buttons for the .cpp</h6>
             </div>
           </div>
           <hr>
-          <h3>struct Sean {</h3>
+          <h3>struct Identity {</h3>
           <h3 style="font-size:18px;">std::string first_name = "Sean";</h3>
           <h3 style="font-size:18px;">std::string last_name = "Hulse";</h3>
           <h3>};</h3>
           <h1>class <span class="lightred-font">ComputerScientist</span> {</h1>
           <h3 class="lightred-font" style="font-size:22px;"><span class="lightred-font">public:</span></h3>
           <div class="padding-left-20">
-            <button onclick="codeDrop()" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-plus"></span>
-              <h2 style="display:inline;font-size:18px;"> ComputerScientist();</button> <span style="color:dimgray;">//default constructor</span></h3>
-              <!--TODO ADD 'animated slideUp on click-->
-            <div id="default-constructor" class="animated slideInUp">
-              hello world.
+            <div class="padding-bottom-5">
+              <button id="default-constructor-button" class="btn btn-info btn-xs"><h4 class="white-font">ComputerScientist (); </h4></button>
+              <div id="default-constructor" class="animated pull-tab-container">
+                <p>We all know the "default" human constructor. If you don't know... birds and bees are involved.</p>
+              </div>
             </div>
-            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> ComputerScientist(int, std::string);</h3>
-            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> ~ComputerScientist();</h3>
-            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> void printEducation();</h3>
-            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> void printPersonalHistory();</h3>
-            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> int getAge();</h3>
-            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> void pushExperienceFront(std::string, int);</h3>
-            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;">add_box</i> int length();</h3>
-            <h3 style="font-size:18px;"><i class="material-icons" style="font-size:18px;" style="font-size:18px;">add_box</i> std::string getExperienceName();</h3>
-          </div>
+            <div class="padding-bottom-5">
+              <button id="constructor-button" class="btn btn-info btn-xs"><h4 class="white-font">ComputerScientist (int, std::string, std::string, std::string); </h4></button>
+              <div id="constructor" class="animated pull-tab-container">
+                <p>ComputerScientist::ComputerScientist (int years, std::string primary_language, std::string first_name, std::string last_name) {</p>
+                  <p class="margin-left-40"> Name.first_name = first_name;</p>
+                  <p class="margin-left-40"> Name.last_name = last_name;</p>
+                  <p class="margin-left-40"> experience_.push_back({years, primary_langauge})</p>
+                <p>}</p>
+                <p>//ComputerScientist(3, "C++", "Sean", "Hulse");</p>
+              </div>
+            </div>
+            <div class="padding-bottom-5">
+              <button id="destructor-button" class="btn btn-info btn-xs"><h4 class="white-font">~ComputerScientist (); </h4></button>
+              <div id="destructor" class="animated pull-tab-container">
+                <p>//Why would you do this to me?</p>
+                <p>ComputerScientist::~ComputerScientist () {</p>
+                  <p class="margin-left-40">for (auto iter : experience_) { </p>
+                  <p class="margin-left-80">delete &amp;iter;</p>
+                  <p class="margin-left-40">}</p>
+                <p>}</p>
+              </div>
+            </div>
+            <div class="padding-bottom-5">
+              <button id="education-button" class="btn btn-info btn-xs"><h4 class="white-font">void printEducation (); </h4></button>
+              <div id="education" class="animated pull-tab-container">
+                <p>void ComputerScientist::printEducation () {</p>
+                  <p class="margin-left-40">std::cout << "Bachelor of Arts: English Literature (2014)\n";</p>
+                  <p class="margin-left-40">std::cout << "C++:\n";</p>
+                  <p class="margin-left-80">std::cout << "\t Introductory C++ (100) \n"</p>
+                  <p class="margin-left-80">std::cout << "\t Intermediate C++ (200) \n"</p>
+                  <p class="margin-left-80">std::cout << "\t Advanced C++ (300) \n"</p>
+                  <p class="margin-left-80">std::cout << "\t Data Structures and Algorithms (300) \n"</p>
+                  <p class="margin-left-40">std::cout << "Java:\n";</p>
+                  <p class="margin-left-80">std::cout << "\t Introductory Java (100) \n"</p>
+                  <p class="margin-left-40">std::cout << "SQL:\n";</p>
+                  <p class="margin-left-80">std::cout << "\t Introduction to Database Management Systems(100) \n"</p>
+                  <p class="margin-left-40">std::cout << "Linux:\n";</p>
+                  <p class="margin-left-80">std::cout << "\t Introductory Linux (100) \n"</p>
+                  <p class="margin-left-40">std::cout << "Mathematics:\n";</p>
+                  <p class="margin-left-80">std::cout << "\t Calc I, Calc II, and Calc III \n"</p>
+                  <p class="margin-left-80">std::cout << "\t Discrete Computational \n"</p>
+                <p>}</p>
+              </div>
+            </div>
+            <div class="padding-bottom-5">
+              <button id="job-button" class="btn btn-info btn-xs"><h4 class="white-font">print jobHistory (); </h4></button>
+              <div id="job" class="animated pull-tab-container">
+                <p>void ComputerScientist::printJobHistory () {</p>
+                  <p class="margin-left-40">std::cout << "IT Technician - Transform Partners - 2015-2016\n";
+                  <p class="margin-left-40">std::cout << "Web Developer - Legacy Exteriors - 2017\n";
+                  <p class="margin-left-40">std::cout << "SEO / Marketing - StoneImpressions - 2015\n";
+                <p>}</p>
+              </div>
+            </div>
           <h3 style="font-size:22px;"><span class="lightred-font">private:</span></h3>
           <div class="padding-left-20">
-            <h3 style="font-size:18px;">std::string name_;</h3>
-            <h3 style="font-size:18px;">int age_ = 0;</h3>
-            <h3 style="font-size:18px;">int count_ = 0;</h3>
-            <h3 style="font-size:18px;">std::hash< std::string> experience_vec_;<span style="color:dimgray;"></span></h3>
+            <h3 style="font-size:18px;">Identity name_;</h3>
+            <h3 style="font-size:18px;">std::vector&lt;std::pair&lt;int, std::string>> experience_;</h3>
           </div>
           <h1>}</h1>
       </div>
